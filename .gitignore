@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+
+# Data artifacts
+data/raw/*.csv
+data/processed/*.csv
+
+# Model artifacts
+models/

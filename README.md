@@ -36,3 +36,20 @@ To ensure explainability, we will apply **SHAP** to interpret model predictions 
 - **Airbnb Open Data (Kaggle)**
 - **Airbnb Prices in European Cities (Kaggle)**
 - **Additional Airbnb datasets from Kaggle (if needed)**
+
+### Project Structure
+- `data/raw/`: original dataset files
+- `data/processed/`: processed outputs (e.g. combined dataset)
+- `notebooks/`: exploratory notebooks
+- `src/data_loader.py`: data ingestion, loading, and combining
+- `src/preprocessing.py`: preprocessing functions
+- `src/train.py`: model training entry point (placeholder)
+- `src/evaluate.py`: model evaluation entry point (placeholder)
+
+### Quick Start
+1. Install dependencies:
+   - `python -m pip install -r requirements.txt`
+2. Combine all city CSV files from `data/raw`:
+   - `python data_loader.py --combine-all --raw-dir data/raw --output-path data/processed/airbnb_combined.csv`
+3. Run first EDA in notebook:
+   - Open `notebooks/01_eda.ipynb`
