@@ -10,7 +10,6 @@ venv/
 
 # Data artifacts
 data/raw/*.csv
-data/processed/*.csv
 
 # Model artifacts
 models/
